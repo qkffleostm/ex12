@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom'
 const LoginPage = ({ history }) => {
     const auth = getAuth(app);
     const [form, setForm] = useState({
-        email: 'qkrdlsguq@inha.com',
-        password: '!vnf04080907'
+        email: 'qkffleostm@naver.com',
+        password: '123456'
     })
     const { email, password } = form
     const [loading, setLoading] = useState(false)
