@@ -17,8 +17,8 @@ const JoinPage = ({ history }) => {
     const db = getFirestore(app)
 
     const [form, setForm] = useState({
-        email: 'qkrdlsguq@inha.com',
-        password: '!vnf04080907'
+        email: 'qkffleostm@naver.com',
+        password: '123456'
     })
     const { email, password } = form
     const [loading, setLoading] = useState(false)
@@ -39,9 +39,9 @@ const JoinPage = ({ history }) => {
                 const uid = success.user.uid;
                 await setDoc(doc(db, 'user', uid), {
                     email: email,
-                    name: '박인협',
-                    address: '경기도 안산시 원초로 61',
-                    phone: '010-5191-0758',
+                    name: '조성광',
+                    address: '경기도 수원시 영통구 창룡대로 250',
+                    phone: '010-5596-9164',
                     photo: ''
                 });
                 setLoading(false);
